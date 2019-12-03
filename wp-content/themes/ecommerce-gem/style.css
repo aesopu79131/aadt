@@ -668,7 +668,7 @@ a:active {
 }
 
 .main-navigation ul ul {
-    background-color: #ffffff;
+    background-color: #77a464;
     left: -9999px;
     margin: 0;
     min-width: 200px;
@@ -677,6 +677,10 @@ a:active {
     top: 100%;
     transition: opacity 0.4s ease-in-out 0s;
     z-index: -9999;
+}
+
+.main-navigation ul.sub-menu li a{
+    color:#FFF !important;
 }
 
 .main-navigation ul ul ul {
@@ -2234,8 +2238,9 @@ li {
 }
 
 .top-header {
-    background: #bddb4d;
+    /* background: #bddb4d; */
 }
+
 
 .top-left {
     float: left;
@@ -2350,7 +2355,7 @@ li {
 } 
 
 .top-right .logged-in,.top-right .top-cart-wrapper{
-    padding: 15px 20px;    
+    padding: 5px 20px;    
 
 }
 
@@ -2365,14 +2370,17 @@ li {
 }
 
 .top-header .search-holder .search-btn {
-    height: 45px;
+    /* height: 45px;
     width: 45px;
     text-align: center;
-    background:#31303c;
+    background:#31303c; */
+    width: 45px;
+    text-align: center;
 }
 
 .top-header .search-holder .search-btn i {
-    line-height: 45px;
+    line-height: 25px;
+    color:#31303c;
 }
 
 .top-account-wrapper a,
@@ -2462,7 +2470,7 @@ body.woocommerce-checkout .top-cart-content {
 
 .top-header .top-cart-wrapper a i,
 .top-header .top-wishlist-wrapper a i {
-    color: #fff;
+    color: #464646;
 }
 
 .top-header .top-cart-wrapper .top-icon-wrap,
@@ -5682,7 +5690,7 @@ li.product .view-detail-wishlist-wrap {
     }
 
     .top-left {
-        border-bottom: 1px solid #22202e; 
+        /* border-bottom: 1px solid #22202e;  */
     }
 
     .top-left span,
@@ -6536,3 +6544,53 @@ div#sticky-wrapper {
 .sticky-wrapper.is-sticky .site-header{
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
 }
+
+
+/** dragon custom css **/
+.top-menu-holder .menu li a{
+    color:#464646;
+    padding: 5px 20px
+}
+
+#top-banner img{
+    width:100%;
+}
+
+.top-search-menu{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#home-search-bar{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#home-search-icon{
+    display: inline-block;
+    padding: 5px;
+}
+
+#home-search-icon i{
+  color:#FFF;
+}
+
+#top-search-menu-wrapper{
+    text-align: right;
+    padding:0px 20px;
+}
+
+.search-field input{
+    display:inline-block;
+    outline: none;
+    padding:1px 10px;
+    border: 3px solid #bddb4d;
+}
+
+.search-field button{
+    display:inline-block;
+    border:none;
+    outline:none;
+    padding: 5px 10px;
+}
+

@@ -60,6 +60,11 @@ if ( ! function_exists( 'ecommerce_gem_top_header_action' ) ) :
         } ?>
 
         <div id="top-bar" class="top-header">
+            <div id="top-banner">
+                <a href="#">
+                    <img src="https://images.hktvmall.com/banner/bannerzh_191202094849.jpg"/>
+                </a>
+            </div>
             <div class="container">
                 <div class="top-left">
 
@@ -445,6 +450,20 @@ if ( ! function_exists( 'ecommerce_gem_header_action' ) ) :
                 </nav><!-- #site-navigation -->
 
                 <nav id="top-search-menu-wrapper">
+                    <!-- search field -->
+                    <div id="home-search-bar">
+                        <div id="home-search-icon">
+                            <form action="./" method="GET">
+                                <input name="post_type" value="product" type="hidden"/>
+                                <div class="search-field">
+                                    <input placeholder="請輸入關鍵字" name="s"/>
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                </div>   
+                                
+                            </form>
+                        </div>
+                    </div>
+
                     <?php
                         wp_nav_menu( array( 
                             'theme_location' => 'custom', 
